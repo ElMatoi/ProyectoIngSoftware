@@ -29,12 +29,12 @@ function DatePicker() {
   const [cantidad_personas, setCantidadPersonas] = useState('');
   const [servicioId, setServicioId] = useState('');
   const [servicios, setServicios] = useState([]);
-  const [reservasEnFecha, setReservasEnFecha] = useState([]);
+
   const [servicioSeleccionado, setServicioSeleccionado] = useState('');
   const [cuposDisponibles, setCuposDisponibles] = useState(0);
   const [blockedDates, setBlockedDates] = useState([]);
   const [showBlockedDates, setShowBlockedDates] = useState(false);
-  const [fetchResult, setFetchResult] = useState(null); // muestra el resultado
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     '/imagenes/pisco.jpg',
