@@ -1,0 +1,308 @@
+@media (max-width: 600px) {
+  .columna {
+    width: 100%;
+  }
+}
+body {
+  background-color: #bcbcbc; /* Cambia el color gris a tu preferencia */
+}
+
+
+.container {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container {
+  background-color: #ffc43a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 1600px; 
+  left: 700px; 
+}
+
+h1 {
+  text-align: center;
+}
+
+.Calendar {
+  margin: 150px auto;
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p.error-message {
+  color: red;
+  text-align: center;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  z-index: 9999;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffc43a;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.date-list-container {
+  background-color: #ffc43a;
+  border: 1px solid #222222;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.date-list-title {
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.date-list-item {
+  margin: 5px 0;
+  color: #555;
+  background-color: #ffc43a;
+  padding: 5px 10px;
+  border: 1px solid #ffc43a;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.date-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.date-list-item {
+  margin: 0 0.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 400;
+}
+
+.img {
+  width: 250px; 
+  height: 100px; 
+}
+
+.Maps {
+  margin-top: 2500px; 
+  margin-left: 1500px;
+  display: flex;
+  height: 100vh;
+}
+
+.Sello {
+  position: absolute;
+  top: 1800px; 
+  left: 200px; 
+}
+.facebook {
+  position: absolute;
+  top: 2000px; 
+  left: 200px; 
+}
+
+.Tour {
+  position: absolute;
+  top: 700px; 
+  left: 200px; 
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 120px;
+  left: 1px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-title {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #ffc43a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.384615384615385em;
+  color: #222222;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.gallery-title {
+ 
+  animation: slide-in 2s, pulse 2s infinite; /* Combina la animación 'slide-in' y la 'pulse' */
+}
+
+
+
+/* Si la pantalla es menor o igual a 600px */
+@media (max-width: 600px) {
+  .image-gallery {
+    top: 50px;
+    left: 100px;
+  }
+}
+
+/* Si la pantalla es menor o igual a 400px */
+@media (max-width: 400px) {
+  .image-gallery {
+    top: 30px;
+    left: 50px;
+  }
+}
+
+/* Estilos para el pie de página */
+.image-container img {
+  position: absolute;
+  top: 2500px;
+  left: 1px;
+  width: 100vw;
+  height: 300px;
+  border: 1px solid #ccc;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 2200px;
+  left: 1px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  animation: slide-in 2s;
+}
+
+.image-overlay h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fade-in 2s;
+}
+
+.image-overlay p {
+  font-size: 18px;
+  margin: 5px 0;
+  line-height: 1.3;
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slide-in {
+  0% {transform: translateY(-50px);}
+  100% {transform: translateY(0);}
+}
+/* Define la animación de palpitación */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.image-overlay {
+ 
+  animation: slide-in 2s, pulse 2s infinite; 
+}
+
